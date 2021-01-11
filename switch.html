@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        switch
+    </title>
+   
+   
+</head>
+<body>
+    <h1> Enter your choice</h1>
+    <ul>
+        <li>Add</li>
+        <li>Sub</li>
+        <li>Mult</li>
+    </ul> 
+    <form>
+        <input type="text" name="" id="choice">
+        <br>
+        <button onclick="myfun()">Click Me</button>
+    </form>
+    <script >
+        function myfun(){
+            var choice =document.getElementById("choice").value;
+            switch (choice){
+                case "add" : var a = 20;
+               var b = 40;
+                var sum = a + b;
+                document.write("addtion of two number is " +sum);
+                break;
+
+                case "sub" : var a = 20;
+               var b = 40;
+                var sub = a - b;
+                document.write("addtion of two number is " +sub);
+                break;
+
+                case "mult" : var a = 20;
+               var b = 40;
+                var sum = a * b;
+                document.write("addtion of two number is " +sum);
+                break;
+                case "div" : var a = 20;
+               var b = 40;
+                var sum = a / b;
+                document.write("addtion of two number is " +sum);
+                break;
+                default : alert("not a valid input");
+            }
+
+        }
+    </script>
+</body>
+</html>
